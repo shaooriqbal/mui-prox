@@ -23,9 +23,9 @@ function Login() {
         }}
       >
         <Typography variant="h4" component="h1" gutterBottom>
-          Login into your account
+            Login into your account
         </Typography>
-        <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1 }}>
+        <Box component="form" onSubmit={handleSubmit} sx={{ mt:2 , mb:2  }}>
           <TextField
             margin="normal"
             required
@@ -50,9 +50,9 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Typography variant="body2" align="center">
+          <Typography color={'Highlight'} variant="body2" align="center">
             Already have an account?{' '}
-            <Link  to="/signUp">
+            <Link to="/signUp">
               Sign Up
             </Link>
           </Typography>
