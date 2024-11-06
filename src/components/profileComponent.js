@@ -25,7 +25,7 @@ export default function ProfileMenu() {
         alt="User Avatar"
         src="https://via.placeholder.com/150"
         onClick={handleClick}
-        sx={{ cursor: 'pointer' }}
+        sx={{ cursor: 'pointer', width: 50,height: 50 }}
       />
       <Menu
         anchorEl={anchorEl}
@@ -36,6 +36,7 @@ export default function ProfileMenu() {
           sx: {
             overflow: 'visible',
             mt: 1.5,
+            mb:8,
             '&:before': {
               content: '""',
               display: 'block',
@@ -53,17 +54,17 @@ export default function ProfileMenu() {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
-        <MenuItem>
+        <MenuItem >
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Avatar
               alt="User Avatar"
               src="https://via.placeholder.com/150"
-              sx={{ mr: 2 }}
+              sx={{ mr: 2, width:45,height:45 }}
             />
             <Box>
-              <Typography variant="body1">John Doe</Typography>
+              <Typography variant="body1">Jarry Hanier</Typography>
               <Typography variant="body2" color="textSecondary">
-                john.doe@example.com
+                Jarry.Hanier@example.com
               </Typography>
             </Box>
           </Box>

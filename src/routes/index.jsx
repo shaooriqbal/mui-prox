@@ -6,6 +6,7 @@ import Login from '../features/auth/login';
 import SignUp from '../features/auth/signUp';
 import Home from '../features/auth/home/home';
 import { useAuth } from '../hooks/useAuth';
+
 export default function AppRoutes() {
   const [accessToken ] = useAuth();
   return (
